@@ -1,8 +1,7 @@
-#include "cli/Menu.h"
+#include "menu.h"
 
 int main() {
-    Menu menu;
-    menu.run();
-
+    // run menu
+    runMenu();
     return 0;
 }
