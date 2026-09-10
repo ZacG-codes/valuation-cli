@@ -7,8 +7,9 @@ void runMenu() {
     bool keepRunning = true;
 
     while (keepRunning == true) {
-        std::cout << "1. book value\n";
-        std::cout << "2. exit\n"; 
+        std::cout << "1. Book value\n";
+        std::cout << "2. Exit\n"; 
+        std::cout << std::endl;
 
         int choice;
         std::cout << "Select choice: ";
@@ -18,20 +19,20 @@ void runMenu() {
             case 1: {
                 double assets, liab, shares;
 
-                std::cout << "Assets: ";
+                std::cout << "Assets (millions): ";
                 std::cin >> assets;
-                std::cout << "Liabilities: ";
+                std::cout << "Liabilities (millions): ";
                 std::cin >> liab;
-                std::cout << "shares outstanding: ";
+                std::cout << "Shares outstanding (millions): ";
                 std::cin >> shares;
 
-                double result = NAV(assets, liab, shares);
-                std::cout << "Intrinsic value per share: $" << result << std::endl;
+                double result = BVPS(assets, liab, shares);
+                std::cout << "Intrinsic value per share: $" << result << std::endl << std::endl;
                 break;
             }
 
             case 2:
-                std::cout << "Exiting... goodbye!";
+                std::cout << "Exiting... goodbye!\n";
                 keepRunning = false;
                 break;
 
