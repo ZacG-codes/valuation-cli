@@ -9,7 +9,9 @@ void runMenu() {
     while (keepRunning == true) {
         std::cout << "1. Book value\n";
         std::cout << "2. Dividend discount model\n";
-        std::cout << "3. Exit\n"; 
+        std::cout << "3. Residual income model\n";
+        std::cout << "4. Discounted cash flow model\n";
+        std::cout << "5. Exit\n"; 
         std::cout << std::endl;
 
         int choice;
